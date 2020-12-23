@@ -9,24 +9,21 @@
 		    <fieldset>
 				<legend>Datos Personales</legend>
 				Nombre: <input type="text" name="nombre"
-				maxlength="30" /><br />
+				maxlength="30" /><br/>
 				Apellidos: <input type="text" name="apellidos"
-                maxlength="60" /><br />
+                maxlength="60" /><br/>
                 Dirección: <input type="text" name="direccion"
-                maxlength="60" /><br />
+                maxlength="60" /><br/>
                 Codigo Postal: <input type="text" name="cpostal"
-                pattern="[0-9]{5}" /><br />
+                pattern="[0-9]{5}" /><br/>
                 Localidad: <input type="text" name="localidad" /><br/>
 		    </fieldset>
 			  <br/>
 		     <fieldset>
 				<legend>Tipo de Contratación</legend>
-				<input type="radio" name="tipoc" value="nuevo"
-				checked="checked">Nueva Contratación &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="tipoc"
-				value="porta">Portabilidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="tipoc"
-				value="cambio">Cambio de Contrato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/><br/>
+				<input type="radio" name="tipoc" value="nuevo" checked="checked">Nueva Contratación &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="tipoc" value="porta">Portabilidad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="tipoc" value="cambio">Cambio de Contrato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/><br/>
 				Elija la compañia actual:
 				<select name="origen">
 					<option value="movistar">Movistar</option>
@@ -60,8 +57,19 @@
                   Cuenta: <input type="text" name="cuenta"
                   placeholder="XXXXXXXXXX" pattern="[0-9]{10}"/>(diez dígitos)<br/>
 			   </fieldset>
+			   <fieldset>
+				  <legend>Datos Estadísticos - ¿Cómo nos conoció?</legend>
+				   <input type="checkbox"name="tipoc" value="0"> A través de la TV <br/> 
+				   <input type="checkbox"name="tipoc" value="0"> A través de la radio <br/>
+				   <input type="checkbox"name="tipoc" value="0"> A través de internet <br/>
+				   <input type="checkbox"name="tipoc" value="0"> Otros <br/>
+			   </fieldset>
+
 			  <input type="submit" value="Enviar Datos" />
-              <input type="reset" value="Borrar Datos" />
+			  <input type="reset" value="Borrar Datos" /> </br>
+			  <input type="button" value="Mostrar Valoración" />
+			  <input type="button" value="Mostrar Cuenta"/>
+			  <input type="button" value="Mostrar Día Semana"/>
 	   </form>	  
 	</body>
 </html>
