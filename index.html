@@ -63,13 +63,24 @@
 				   <input type="checkbox"name="tipoc" value="0"> A través de la radio <br/>
 				   <input type="checkbox"name="tipoc" value="0"> A través de internet <br/>
 				   <input type="checkbox"name="tipoc" value="0"> Otros <br/>
-			   </fieldset>
+					
+		
+				   <p><input type="range" 
+					name="valor" min="1" max="4"/> Valoración [1-5]</p>
+                   <p>Fecha de la Encuesta 
+				   <input type="date" name="fecha"/> Valoración [1-5]</p>
+		 
 
-			  <input type="submit" value="Enviar Datos" />
-			  <input type="reset" value="Borrar Datos" /> </br>
-			  <input type="button" value="Mostrar Valoración" />
-			  <input type="button" value="Mostrar Cuenta"/>
-			  <input type="button" value="Mostrar Día Semana"/>
+				</fieldset>
+
+			  <input type="submit" value="Enviar Datos"/>
+			  <input type="reset" value="Borrar Datos"/> </br>
+			  <button type="button" onclick="alert ('Has valorado con 4 puntos');">
+                    Mostrar Valoración</button>
+			  <button type="button" onclick="alert ('Le informamos que su cuenta bancaria es ES12-1111-2222-33-4455667788');">
+					Mostrar Cuenta</button>
+			  <button type="button" onclick="alert ('La fecha selecionada en el elemento de fecha es un Martes');">
+						Mostrar Día Semana</button>	
 	   </form>	  
 	</body>
 </html>
